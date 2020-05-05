@@ -55,35 +55,53 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
         \multicolumn{2}{l}{Technique} & Citations \\ 
         \midrule
         
-        \multirow{2}{*}{} & Parallel Breadth-First Search & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
-            \cite{b1}   \\
-            \cite{b1}   \\
+        \multirow{2}{*}{} & Vanilla GAN & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
         \end{tabular}\\ 
+ 
         \cline{2-3} 
-        \multirow{2}{*}{} & Parallel Depth-First Search & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
-            \cite{b1}   \\
-            \cite{b1}   \\
+        \multirow{2}{*}{} & Conditional GANs & \begin{tabular}[c]{@{}l@{}} \cite{b4}\\
         \end{tabular}\\ 
+ 
         \cline{2-3} 
-        \multirow{2}{*}{} & Single-Source Shortest Path & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
-            \cite{b1}   \\
-            \cite{b1}   \\
+        \multirow{2}{*}{} & Progressive GANs & \begin{tabular}[c]{@{}l@{}} \cite{b12}\\
+        \end{tabular}\\ 
+ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Deep Convolutional GANs (DCGANs) & \begin{tabular}[c]{@{}l@{}} \cite{b5}\\
         \end{tabular}\\  
+    
         \cline{2-3} 
-        Generative Adversarial Networks &  All-Pairs Shortest Path  & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
-            \cite{b1,b1}   \\
-            \cite{b1, b1}   \\
+        \multirow{2}{*}{} & Auxiliary Classifier GANs & \begin{tabular}[c]{@{}l@{}} \cite{b7}\\
         \end{tabular}\\ 
+        
         \cline{2-3} 
-        \multirow{2}{*}{} & Minimum Weight Spanning Tree & \begin{tabular}[c]{@{}l@{}} \cite{b1, b1}\\
-            \cite{b1, b1}   \\
-            \cite{b1, b1}   \\
-        \end{tabular}\\ 
-        \cline{2-3} 
-        \multirow{2}{*}{} & Random Walk & \begin{tabular}[c]{@{}l@{}} \cite{b1, b1}\\
-            \cite{b1, b1}   \\
-            \cite{b1}   \\
+        \multirow{2}{*}{} & 3D-GAN & \begin{tabular}[c]{@{}l@{}} \cite{b8}\\
         \end{tabular}\\  
+
+        \cline{2-3} 
+        Generative Adversarial Networks &  Info GANs  & \begin{tabular}[c]{@{}l@{}} \cite{b6}\\
+        \end{tabular}\\ 
+ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & PacGAN & \begin{tabular}[c]{@{}l@{}} \cite{b9}\\
+        \end{tabular}\\ 
+ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Pix2PixGAN & \begin{tabular}[c]{@{}l@{}} \cite{b10}\\
+        \end{tabular}\\
+
+        \cline{2-3} 
+        \multirow{2}{*}{} & Cycle-GAN & \begin{tabular}[c]{@{}l@{}} \cite{b11}\\
+        \end{tabular}\\ 
+
+        \cline{2-3} 
+        \multirow{2}{*}{} & Text-to-Image Synthesis (StackGAN) & \begin{tabular}[c]{@{}l@{}} \cite{b13}\\
+        \end{tabular}\\ 
+
+        \cline{2-3} 
+        \multirow{2}{*}{} & Super-Resolution GAN & \begin{tabular}[c]{@{}l@{}} \cite{b14}\\
+        \end{tabular}\\ 
+
         \midrule
 
         \multirow{2}{*}{} & Label Propagation & \cite{b1}\\ 
@@ -118,6 +136,28 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
 \bibitem{b2} Ballard, D.H., 1987. Modular learning in neural networks, in: Proceedings of the Sixth National Conference on Artificial Intelligence - Volume 1, AAAI’87. AAAI Press, Seattle, Washington, pp. 279–284.
 
 \bibitem{b3} Rumelhart, D.E., Hinton, G.E., Williams, R.J., 1986. Learning internal representations by error propagation, in: Parallel Distributed Processing: Explorations in the Microstructure of Cognition, Vol. 1: Foundations. MIT Press, Cambridge, MA, USA, pp. 318–362.
+
+\bibitem{b4} Mirza, M., Osindero, S., 2014. Conditional Generative Adversarial Nets. arXiv:1411.1784 [cs, stat].
+
+\bibitem{b5} Radford, A., Metz, L., Chintala, S., 2016. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks. arXiv:1511.06434 [cs].
+
+\bibitem{b6} Chen, X., Duan, Y., Houthooft, R., Schulman, J., Sutskever, I., Abbeel, P., 2016. InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets. arXiv:1606.03657 [cs, stat].
+
+\bibitem{b7} Odena, A., Olah, C., Shlens, J., 2017. Conditional Image Synthesis With Auxiliary Classifier GANs. arXiv:1610.09585 [cs, stat].
+
+\bibitem{b8} Wu, J., Zhang, C., Xue, T., Freeman, W.T., Tenenbaum, J.B., 2016. Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling.
+
+\bibitem{b9} Lin, Z., Khetan, A., Fanti, G., Oh, S., 2018. PacGAN: The power of two samples in generative adversarial networks, in: Bengio, S., Wallach, H., Larochelle, H., Grauman, K., Cesa-Bianchi, N., Garnett, R. (Eds.), Advances in Neural Information Processing Systems 31. Curran Associates, Inc., pp. 1498–1507.
+
+\bibitem{b10} Isola, P., Zhu, J.-Y., Zhou, T., Efros, A.A., 2018. Image-to-Image Translation with Conditional Adversarial Networks. arXiv:1611.07004 [cs].
+
+\bibitem{b11} Zhu, J.-Y., Park, T., Isola, P., Efros, A.A., 2018. Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks. arXiv:1703.10593 [cs].
+
+\bibitem{b12} Karras, T., Aila, T., Laine, S., Lehtinen, J., 2018. Progressive Growing of GANs for Improved Quality, Stability, and Variation. arXiv:1710.10196 [cs, stat].
+
+\bibitem{b13} Zhang, H., Xu, T., Li, H., Zhang, S., Wang, X., Huang, X., Metaxas, D., 2017. StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks. arXiv:1612.03242 [cs, stat].
+
+\bibitem{b14} Ledig, C., Theis, L., Huszar, F., Caballero, J., Cunningham, A., Acosta, A., Aitken, A., Tejani, A., Totz, J., Wang, Z., Shi, W., 2017. Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network. arXiv:1609.04802 [cs, stat].
 
 \end{thebibliography}
 \end{document}
