@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{booktabs}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -20,7 +22,7 @@ L00151142@student.lyit.ie}}
 \maketitle
 
 \begin{abstract}
-
+Artificial intelligence has made it possible for computers to learn from experiences and perform simple tasks which a human can easily do. Visual perception by human-like object recognizing abilities is once such task which scientists have been able to teach computers. In the past few years due to advancement and innovation in computing power especially unlocking GPU based distributed computing, computer scientists have achieved good success in able to teach computers to do complex tasks beyond classification like object detection, image segmentation, object tracking, and event detection. Computer Vision (CV) has since been used in numerous ways ranging from automated cars to quality check at factories which usually required an expert to manually check the production line.Artificial intelligence has made it possible for computers to learn from experiences and perform simple tasks which a human can easily do. Visual perception by human-like object recognizing abilities is once such task which scientists have been able to teach computers. In the past few years due to advancement and innovation in computing power especially unlocking GPU based distributed computing, computer scientists have achieved good success in able to teach computers to do complex tasks beyond classification like object detection, image segmentation, object tracking, and event detection.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -28,17 +30,78 @@ component, formatting, style, styling, insert
 \end{IEEEkeywords}
 
 \section{Introduction}
-Artificial intelligence has made it possible for computers to learn from experiences and perform simple tasks which a human can easily do. Visual perception by human-like object recognizing abilities is once such task which scientists have been able to teach computers. The field of teaching computers to percieve its environment is called as Computer Vision (CV). 
+Artificial intelligence has made it possible for computers to learn from experiences and perform simple tasks which a human can easily do. Visual perception by human-like object recognizing abilities is once such task which scientists have been able to teach computers. In the past few years due to advancement and innovation in computing power especially unlocking GPU based distributed computing, computer scientists have achieved good success in able to teach computers to do complex tasks beyond classification like object detection, image segmentation, object tracking, and event detection. Computer Vision (CV) has since been used in numerous ways ranging from automated cars to quality check at factories which usually required an expert to manually check the production line.
 
-In the past few years due to advancement and innovation in computing power especially unlocking GPU based distributed computing, computer scientists have achieved good success in able to teach computers to do complex tasks beyond classification like object detection, image segmentation, object tracking, and event detection. CV has since been used in numerous ways ranging from automated cars to quality check at factories which usually required an expert to manually check the production line.
-
-With such advancements, the need for data is never ending. CV models running on neural networks require huge amount labeled training data to train them. But the problem lies in finding suitable high-quality data. Manual scavenging and labelling of data is not an ideal approach as it is costly to do so. The only option left for computer scientists is to produce high quality artificial data either from scratch or by manipulating existing data. Generative learning is one such popular way to generate artificial data. In this paper, we will look at different generative methods introduced lately.
+With such advancements, the need for data is never ending. CV models running on neural networks require huge amount labeled training data to train them. But the problem lies in finding suitable high-quality data. Manual scavenging and labelling of data is not an ideal approach as it is costly to do so. The only option left for computer scientists is to produce high quality artificial data either from scratch or by manipulating existing data. Generative learning is one such popular way to generate artificial data. This paper will look at different generative methods introduced lately.
 
 The rest of the paper is organized as follows-- Section \ref{lr} will provide an overview of generative learning. Section \ref{techniques} will cover recent techniques used for generative learning. Section \ref{comparison} will provide a comparison of different techniques discussed in section \ref{techniques}. Finally, section \ref{conclusion} will provide some remarks to conclude the paper. 
 
-\section{Literature Review}
+\section{Generative Learning}
 \label{lr}
-In 2014, Goodfellow et al. published a paper on Generative Adversarial Networks (GANs) \cite{b1}. GANs has since then been applied in numerous fields including Natural Language Processing (NLP) and computer vision. This family of deep learning methods has become quite popular due to its good results. In this review paper provides a survey on recent adaptations of GAN alongwith the first-original version often called as vanilla GAN.
+\subsection{Background}
+Computer scientists has contributed a lot of research towards generating synthetic visual data. With such techniques, computer scientists has been able to generate data which is almost indistinguishable by a human eye. This fast availibility of generated data has made it possible to solve a lot of modern problems in deep learning.
+
+There has been some generative techniques around in this field of deep learning. In 2014, Goodfellow et al. published a paper on Generative Adversarial Networks (GANs) \cite{b1}. This state-of-the-art technique proved to be a major break-through in deep learning especially in CV. GANs has since then been applied in numerous fields including Natural Language Processing (NLP) and computer vision. This family of deep learning methods has become quite popular due to its good results. This review paper provides a survey on recent adaptations of GAN alongwith the first-original version often called as vanilla GAN. Autoencoders is a class of unsupervised neural networks which is also a popular method to generate data with some applications dating back to the 80s \cite{b2, b3}. Variational Autoencoders (VAEs) in specific is a generative technique.
+
+\subsection{Taxonomy}
+The following Table \ref{tab:taxonomy_table} presents taxonomy of different generative learning techniques--
+
+\begin{table*}[]
+    \caption{Taxonomy and citations of Generative Learning techniques}
+    \label{tab:taxonomy_table}
+    \centering
+    \begin{tabular}{l l l}
+        \toprule
+        \multicolumn{2}{l}{Technique} & Citations \\ 
+        \midrule
+        
+        \multirow{2}{*}{} & Parallel Breadth-First Search & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
+            \cite{b1}   \\
+            \cite{b1}   \\
+        \end{tabular}\\ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Parallel Depth-First Search & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
+            \cite{b1}   \\
+            \cite{b1}   \\
+        \end{tabular}\\ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Single-Source Shortest Path & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
+            \cite{b1}   \\
+            \cite{b1}   \\
+        \end{tabular}\\  
+        \cline{2-3} 
+        Generative Adversarial Networks &  All-Pairs Shortest Path  & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
+            \cite{b1,b1}   \\
+            \cite{b1, b1}   \\
+        \end{tabular}\\ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Minimum Weight Spanning Tree & \begin{tabular}[c]{@{}l@{}} \cite{b1, b1}\\
+            \cite{b1, b1}   \\
+            \cite{b1, b1}   \\
+        \end{tabular}\\ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Random Walk & \begin{tabular}[c]{@{}l@{}} \cite{b1, b1}\\
+            \cite{b1, b1}   \\
+            \cite{b1}   \\
+        \end{tabular}\\  
+        \midrule
+
+        \multirow{2}{*}{} & Label Propagation & \cite{b1}\\ 
+        \cline{2-3} 
+        \multirow{2}{*}{} & Louvain Modularity & \begin{tabular}[c]{@{}l@{}} \cite{b1, b1}\\
+            \cite{b1, b1}   \\
+            \cite{b1} \\
+        \end{tabular}\\ 
+        \cline{2-3} 
+        Autoencoders & Node Clustering Coefficient and Average Clustering Coefficient & \cite{b1}   \\ 
+        \cline{2-3}
+        \multirow{2}{*}{} & Bron-Kerbosch & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
+            \cite{b1}   \\
+        \end{tabular}\\  
+        
+        \bottomrule
+    \end{tabular}
+\end{table*}
 
 \section{Techniques}
 \label{techniques}
@@ -51,6 +114,10 @@ In 2014, Goodfellow et al. published a paper on Generative Adversarial Networks 
 
 \begin{thebibliography}{00}
 \bibitem{b1} Goodfellow, I.J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., Bengio, Y., 2014. Generative Adversarial Networks. arXiv:1406.2661 [cs, stat].
+
+\bibitem{b2} Ballard, D.H., 1987. Modular learning in neural networks, in: Proceedings of the Sixth National Conference on Artificial Intelligence - Volume 1, AAAI’87. AAAI Press, Seattle, Washington, pp. 279–284.
+
+\bibitem{b3} Rumelhart, D.E., Hinton, G.E., Williams, R.J., 1986. Learning internal representations by error propagation, in: Parallel Distributed Processing: Explorations in the Microstructure of Cognition, Vol. 1: Foundations. MIT Press, Cambridge, MA, USA, pp. 318–362.
 
 \end{thebibliography}
 \end{document}
