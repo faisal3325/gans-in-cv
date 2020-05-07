@@ -54,11 +54,7 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
         \toprule
         \multicolumn{2}{l}{Technique} & Citations \\ 
         \midrule
-        
-        \multirow{2}{*}{} & Vanilla GAN & \begin{tabular}[c]{@{}l@{}} \cite{b1}\\
-        \end{tabular}\\ 
- 
-        \cline{2-3} 
+  
         \multirow{2}{*}{} & Conditional GAN & \begin{tabular}[c]{@{}l@{}} \cite{b4}\\
         \end{tabular}\\ 
  
@@ -75,12 +71,12 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
         \end{tabular}\\ 
         
         \cline{2-3} 
-        \multirow{2}{*}{} & 3D-GAN & \begin{tabular}[c]{@{}l@{}} \cite{b8}\\
-        \end{tabular}\\  
-
-        \cline{2-3} 
         Generative Adversarial Networks &  Info GANs  & \begin{tabular}[c]{@{}l@{}} \cite{b6}\\
         \end{tabular}\\ 
+        
+        \cline{2-3} 
+        \multirow{2}{*}{} & 3D-GAN & \begin{tabular}[c]{@{}l@{}} \cite{b8}\\
+        \end{tabular}\\  
  
         \cline{2-3} 
         \multirow{2}{*}{} & PacGAN & \begin{tabular}[c]{@{}l@{}} \cite{b9}\\
@@ -114,11 +110,26 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
 \label{techniques}
 
 \subsection{Generative Adversarial Networks (GANs)}
-Goodfellow et al. developed this state-of-the-art class of neural networks with two key components; a generator and a discriminator. The generator is a neural network which takes a random vector input usually a noise and generates a new plausible output out of it in the domain. This vector input is taken from a Gaussian distribution. A Gaussian or normal distribution is a probability distribution around a mean, which signifies the data around the mean is more frequent as compared to data points away from the mean. A Gaussian distribution shows a bell curve when plotted. The vector is referred as a latent space which means significant variables but not explicity visible. Due to the fact that it uses random vector sample every time, the model becomes stochastic, the output will be non-deterministic every time. The generator makes unlimited samples out of it. The discriminator, a classification model, then takes input from the training dataset as well as output from the generator model and attempts to identify source of the input, whether it is from the training dataset or from the generator generated ouput. Both models are meant to compete with each other, the generator has to fool the discriminator into incorrectly classifying its sample as a real sample from the training set and the discriminator has to make itself perfect in correctly classifying input samples. The generator and the discriminator are both trained alongwith. When the discriminator predicts the class of the input sample, it is tweaked to perform better for the next sample, likewise the generator is updated to create samples which will fool the discriminator. Even though GAN is an unsupervised learning technique but this architecture of it is designed as a supervised learning technique.
+Goodfellow et al. developed this state-of-the-art class of neural networks with two key components; a generator and a discriminator. The generator is a neural network which takes a random vector input usually a noise and generates a new plausible output out of it in the domain. This vector input is taken from a Gaussian distribution. A Gaussian or normal distribution is a probability distribution around a mean, which signifies the data around the mean is more frequent as compared to data points away from the mean. A Gaussian distribution shows a bell curve when plotted. The vector is referred as a latent space which means significant variables but not explicity visible. Due to the fact that it uses random vector sample every time, the model becomes stochastic, the output will be non-deterministic every time. The generator makes unlimited samples out of it. The discriminator, a classification model, then takes input from the training dataset as well as output from the generator model and attempts to identify source of the input, whether it is from the training dataset or from the generator generated ouput. Both models are meant to compete with each other, the generator has to fool the discriminator into incorrectly classifying its sample as a real sample from the training set and the discriminator has to make itself perfect in correctly classifying input samples. The generator and the discriminator are both trained alongwith. When the discriminator predicts the class of the input sample, it is tweaked to perform better for the next sample, likewise the generator is updated to create samples which will fool the discriminator. Even though GAN is an unsupervised learning technique but this architecture of it is designed as a supervised learning technique. The generator model is then used discarding the discriminator model.
 
-The following sections cover some variants of GAN:
+The following figure \ref{fig1} describes the working of a GAN.
+
+\begin{figure}[!h]
+    \centerline{\includegraphics[scale=0.6]{figures/GAN.pdf}}
+    \caption{End-to-end process of the Vanilla GAN}
+    \label{fig1}
+\end{figure}
 
 \subsubsection{Conditional GAN}
+Conditional GAN is an extension of GAN proposed by Mirza et al. in 2014 \cite{b4}. It works on the principal of conditional probability which is defined as the probability of an event given another event mathematically represented as $P(A|B)$ which translates to probability of $A$ given $B$. Conditional GAN is conditioned using extra information which is passed to the generator as well as to the discriminator. This extra information can be any supplementary information like image labels. The discriminator gets the extra information alongwith the input from generator.
+
+The following figure \ref{fig2} describes the working of a conditional GAN.
+
+\begin{figure}[!h]
+    \centerline{\includegraphics[scale=0.6]{figures/CGAN.pdf}}
+    \caption{End-to-end process of the conditional GAN}
+    \label{fig2}
+\end{figure}
 
 \subsubsection{Progressive GAN}
 
