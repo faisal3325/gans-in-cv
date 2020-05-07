@@ -128,6 +128,13 @@ Conditional GAN is an extension of GAN proposed by Mirza et al. in 2014 \cite{b4
 \end{figure}
 
 \subsubsection{Progressive GAN}
+Karras et al in 2017 published a paper introducing progressive GAN \cite{b12}. According to the authors of the paper, they proposed a novel training technique where the generator and discriminator grow progressively as they train themselves. Growing progressively means adding more layers to themselves to fine tune the model. With this approach, the training time decreases. The generator produces low quality images and as more layers are added it fine tunes the model resulting in high quality images. This progressive learning technique allows the model to gradually discover large scale composition of the image and then focus on improving the fine details of the image. New layers are added in such a way that it does not drastically affect the fine tuned network. Figure \ref{fig3} shows how layers are added to both the generator and discriminator together.
+
+\begin{figure}[!h]
+    \centerline{\includegraphics[scale=0.7]{figures/PGAN.pdf}}
+    \caption{Addition of layers in every iteration of progressive GAN}
+    \label{fig3}
+\end{figure}
 
 \subsubsection{Deep Convolutional GAN (DCGAN)}
 
