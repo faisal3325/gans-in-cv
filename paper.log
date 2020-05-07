@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.9)  7 MAY 2020 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.9)  7 MAY 2020 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,19 +469,22 @@ Package pdftex.def Info: figures/PGAN.pdf  used on input line 134.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./figures/GAN.pdf
+
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+ [2 <./figures/GAN.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/GAN.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 > <./figures/CGAN.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figures/CGAN.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-Underfull \hbox (badness 1365) in paragraph at lines 182--183
+Underfull \hbox (badness 1365) in paragraph at lines 183--184
 \OT1/ptm/m/n/8 Learn-ing a Prob-a-bilis-tic La-tent Space of Ob-ject Shapes via 3D
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 []\OT1/ptm/m/n/8 Doersch, C., 2016. Tu-to-rial on Vari-a-tional Au-toen-coders.
  []
 
@@ -509,7 +512,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  30i,14n,37p,2072b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.pdf" (3 pages, 232966 bytes).
+Output written on "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.pdf" (3 pages, 233625 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream

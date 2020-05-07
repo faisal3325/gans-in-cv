@@ -137,6 +137,7 @@ Karras et al in 2017 published a paper introducing progressive GAN \cite{b12}. A
 \end{figure}
 
 \subsubsection{Deep Convolutional GAN (DCGAN)}
+Deep Convolutional GAN (DCGAN), one of the first convolutional GANs proposed by Radford et al in early 2016 \cite{b5}, relies on the architecture of CNN. The authors proposed a few architecture guidelines which describes the composition of a DCGAN. They have taken a CNN and replaced the pooling layers with convolutions with fractional-strides in the generator in order to reduce feature maps resulting from the sample Gaussian input. They also have replaced the pooling layers in discriminator with convolutions with strides resulting in more parameters to train the model. They then used batch normalization for both the models resulting in stable training. Then to lower the training parameters, they removed hidden layers. Then finally they have used ReLU and LeakyReLU as the activation function in the generator and the discriminator respectively. 
 
 \subsubsection{Auxiliary Classifier GAN}
 

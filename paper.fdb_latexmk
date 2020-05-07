@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1588887554 "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.tex" "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.pdf" "paper" 1588887566
+["pdflatex"] 1588888716 "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.tex" "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.pdf" "paper" 1588888720
   "IEEEtran.cls" 1440654524 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.aux" 1588887556 3845 167a220cc79b01a3745413f399e8cd7a ""
-  "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.tex" 1588887551 13479 d198cda898407d548ae55e0f3b61dfff ""
+  "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.aux" 1588888718 3859 84388bd3676a526057b93ae3ae48ce0b ""
+  "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.tex" 1588888714 14335 ba4ff5ce0098e08956d727cfc2bbfb35 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1575914784 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1575915441 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1575920667 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -77,11 +77,11 @@
   "figures/CGAN.pdf" 1588871746 66107 292f84ef329073bdf417346393eb8c5a ""
   "figures/GAN.pdf" 1588871908 64524 8f66d351d737aeeb896aa28659bc35b6 ""
   "figures/PGAN.pdf" 1588887343 31505 56647f960792f4eddee93abd4a61ee76 ""
-  "paper.aux" 1588887556 3845 167a220cc79b01a3745413f399e8cd7a "pdflatex"
-  "paper.tex" 1588887551 13479 d198cda898407d548ae55e0f3b61dfff ""
+  "paper.aux" 1588888718 3859 84388bd3676a526057b93ae3ae48ce0b "pdflatex"
+  "paper.tex" 1588888714 14335 ba4ff5ce0098e08956d727cfc2bbfb35 ""
   (generated)
-  "paper.log"
-  "paper.pdf"
   "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.log"
   "c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.pdf"
   "paper.aux"
+  "paper.log"
+  "paper.pdf"
