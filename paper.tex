@@ -59,19 +59,19 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
         \end{tabular}\\ 
  
         \cline{2-3} 
-        \multirow{2}{*}{} & Conditional GANs & \begin{tabular}[c]{@{}l@{}} \cite{b4}\\
+        \multirow{2}{*}{} & Conditional GAN & \begin{tabular}[c]{@{}l@{}} \cite{b4}\\
         \end{tabular}\\ 
  
         \cline{2-3} 
-        \multirow{2}{*}{} & Progressive GANs & \begin{tabular}[c]{@{}l@{}} \cite{b12}\\
+        \multirow{2}{*}{} & Progressive GAN & \begin{tabular}[c]{@{}l@{}} \cite{b12}\\
         \end{tabular}\\ 
  
         \cline{2-3} 
-        \multirow{2}{*}{} & Deep Convolutional GANs (DCGANs) & \begin{tabular}[c]{@{}l@{}} \cite{b5}\\
+        \multirow{2}{*}{} & Deep Convolutional GANs (DCGAN) & \begin{tabular}[c]{@{}l@{}} \cite{b5}\\
         \end{tabular}\\  
     
         \cline{2-3} 
-        \multirow{2}{*}{} & Auxiliary Classifier GANs & \begin{tabular}[c]{@{}l@{}} \cite{b7}\\
+        \multirow{2}{*}{} & Auxiliary Classifier GAN & \begin{tabular}[c]{@{}l@{}} \cite{b7}\\
         \end{tabular}\\ 
         
         \cline{2-3} 
@@ -112,6 +112,45 @@ The following Table \ref{tab:taxonomy_table} presents taxonomy of different gene
 
 \section{Techniques}
 \label{techniques}
+
+\subsection{Generative Adversarial Networks (GANs)}
+Goodfellow et al. developed this state-of-the-art class of neural networks with two key components; a generator and a discriminator. The generator is a neural network which takes a random vector input usually a noise and generates a new plausible output out of it in the domain. This vector input is taken from a Gaussian distribution. A Gaussian or normal distribution is a probability distribution around a mean, which signifies the data around the mean is more frequent as compared to data points away from the mean. A Gaussian distribution shows a bell curve when plotted. The vector is referred as a latent space which means significant variables but not explicity visible. Due to the fact that it uses random vector sample every time, the model becomes stochastic, the output will be non-deterministic every time. The generator makes unlimited samples out of it. The discriminator, a classification model, then takes input from the training dataset as well as output from the generator model and attempts to identify source of the input, whether it is from the training dataset or from the generator generated ouput. Both models are meant to compete with each other, the generator has to fool the discriminator into incorrectly classifying its sample as a real sample from the training set and the discriminator has to make itself perfect in correctly classifying input samples. The generator and the discriminator are both trained alongwith. When the discriminator predicts the class of the input sample, it is tweaked to perform better for the next sample, likewise the generator is updated to create samples which will fool the discriminator. Even though GAN is an unsupervised learning technique but this architecture of it is designed as a supervised learning technique.
+
+The following sections cover some variants of GAN:
+
+\begin{figure}[h]
+    \centerline{\includegraphics[scale=0.8]{figures/generator.pdf}}
+    \caption{The numbers depict the order of traversal of nodes in a BFS implementation}
+    \label{fig1}
+\end{figure}
+
+\subsubsection{Vanilla GAN}
+
+\subsubsection{Conditional GAN}
+
+\subsubsection{Progressive GAN}
+
+\subsubsection{Deep Convolutional GAN (DCGAN)}
+
+\subsubsection{Auxiliary Classifier GAN}
+
+\subsubsection{3D-GAN}
+
+\subsubsection{Info GAN}
+
+\subsubsection{PacGAN}
+
+\subsubsection{Pix2PixGAN}
+
+\subsubsection{Cycle-GAN}
+
+\subsubsection{Text-to-Image Synthesis (StackGAN)}
+
+\subsubsection{Super-Resolution GAN}
+
+\subsection{Autoencoders}
+
+\subsubsection{Variational Autoencoders (VAEs)}
 
 \section{Comparison}
 \label{comparison}
