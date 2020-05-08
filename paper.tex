@@ -158,8 +158,18 @@ Auxiliary classifier GAN (ACGAN), proposed by Odena et al in 2017 \cite{b7}, is 
 \subsubsection{Super-Resolution GAN}
 
 \subsection{Autoencoders}
+Autoencoders are a type of neural networks which learns in an unsupervised way. As the name suggests, it encodes the input and then try to reconstruct the input to generate a similar or better output. This way it learns to reduce unnecassary features while being able to produce the same input data it was fed. This technique is often used for dimension reduction, fix noisy data, or compression without losing significant parts of the data. Autoencoders generally use a feedforward architecture which uses backpropagation while training.
+
+\begin{figure}[!h]
+    \centerline{\includegraphics[scale=0.6]{figures/AE.pdf}}
+    \caption{Architecture of an autoencoder}
+    \label{fig4}
+\end{figure}
+
+In the above figure \ref{fig4}, an autencoder is shown. It has 2 main components: an encoder which takes in the input and encodes it and a decoder which uses the encoded output of the encoder as input and tries to generate the original input of the model. Due to the backpropagation nature of this model, the training is quite fast.
 
 \subsubsection{Variational Autoencoders (VAEs)}
+Variational Autoencoders (VAEs) are generative models. It is based on vanilla autencoders but with a distinct property of picking up input from a latent space which is continous in nature. It basically avoids overfitting by regularizing its training. Unlike GAN, where a discriminator is used to classify the data which in turn helps the generator to tune itself to fool the discriminator, VAEs learn how to generate the data. The model first encodes the input over the latent space as distribution, then it picks up a point from the resultant latent space and then decoded. The error in decoding is calculated and backpropagated in the network. It uses Stochastic Gradient descent to train itself. This enables the model to generate distinct samples with similar characteristics to the input. VAEs can work with an surprisingly diverse data forms, continous or discrete, labelled or unlabelled, sequential or non-sequential, making it an extremely efficient generative learning technique. VAEs has proven to produce images out of latent space but it often performs poorly. This is the reason why VAEs are not used anymore for generative learning in computer vision.
 
 \section{Comparison}
 \label{comparison}

@@ -160,6 +160,9 @@ INPUT ./figures/PGAN.pdf
 INPUT c:/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT c:/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/figures/AE.pdf
+INPUT ./figures/AE.pdf
+INPUT ./figures/AE.pdf
 INPUT c:/Users/faisa/OneDrive - Letterkenny Institute of Technology/3rd Semester/AI 2- James, Kevin/Computer Vision/CA 1/GANs in CV/gans-in-cv/paper.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
