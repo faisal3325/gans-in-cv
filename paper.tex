@@ -145,7 +145,8 @@ Auxiliary classifier GAN (ACGAN), proposed by Odena et al in 2017 \cite{b7}, is 
 \subsubsection{3D-GAN}
 3D-GAN, is a 3D-object generation GAN proposed by Wu et al \cite{b8} in 2016. This was a novel technique which focused on the 3D space generation using GAN using CNN. 3D object generation is not an easy task due to the high-dimensionality of the object. With high dimensionality, a large number of parameters are needed. To solve this high dimensionality problem, CNN is the best bet out there. A CNN with the apropriate configuration helps in increasing the dimensions of the sample space while also being able to reduce the parameters/features. The authors proposed a CNN which is similar to DCGAN. With this architecture they have managed to reduce the features by a great amount. They added a Sigmoid layer in the end. Due to the fact that it is difficult to generate a 3D object as compared to be able to classify them, the authors had to come up with a simple training method. They used a bigger batch with very low learning rate. This method proved to be able to generate good-quality shapes.
 
-\subsubsection{Info GAN}
+\subsubsection{InfoGAN}
+InfoGAN was proposed by Chen et al in 2016 \cite{b6}. InfoGAN is a GAN which utilises the information shared among a subset of the latent space. It also uses an unsupervised learning technique called disentagled representation which allocated different sets of dimensions by breaking down features of the data. Disentangled information represents a low representation of the data. With the introdcution of this technique, it makes the model to be truly unsupervised. InfoGAN as claimed by the authors contributes comparatively less computation cost when used with GAN also making it easier to train. 
 
 \subsubsection{PacGAN}
 
