@@ -22,7 +22,7 @@ L00151142@student.lyit.ie}}
 \maketitle
 
 \begin{abstract}
-
+Generative learning is the technique to generate artificial data. This paper has covered a brief review of different generative learning techniques applied in computer vision to generate visual data. With advancement in computing power especially utilisation of GPU for distributed computing, a lot of deep learning techniques has been developed in this field of computer vision. Generative Adversarial Networks and autoencoders are such unsupervised deep learning neural networks. GANs have garnered a lot of interest by computre scientists due to its high quality image generation and also because of its novel yet simple architecture. A lot of variants of GANs are have been developed since the original GAN was introduced by Goodfellow et al in 2014 \cite{b1}. These variants have either tweak or have build upon the existing model. Some of the techniques covered in this paper are conditional GAN, progressive GAN, deep convolutional GANs, auxiliary GAN, InfoGANs, 3D-GAN, PacGAN, Pix2PixGAN, Cycle-GAN, Text-to-Image Synthesis (StackGAN), and Super-Resolution GAN. These models are just a few among others presented by researchers. This paper has also provided a brief critique on Variational Autoencoders which is a variant of the autencoder neural network. 
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -34,7 +34,7 @@ Artificial intelligence has made it possible for computers to learn from experie
 
 With such advancements, the need for data is never ending. CV models running on neural networks require huge amount labeled training data to train them. But the problem lies in finding suitable high-quality data. Manual scavenging and labelling of data is not an ideal approach as it is costly to do so. The only option left for computer scientists is to produce high quality artificial data either from scratch or by manipulating existing data. Generative learning is one such popular way to generate artificial data. This paper will look at different generative methods introduced lately.
 
-The rest of the paper is organized as follows-- Section \ref{lr} will provide an overview of generative learning. Section \ref{techniques} will cover recent techniques used for generative learning. Section \ref{comparison} will provide a comparison of different techniques discussed in section \ref{techniques}. Finally, section \ref{conclusion} will provide some remarks to conclude the paper. 
+The rest of the paper is organized as follows-- Section \ref{lr} will provide an overview of generative learning. Section \ref{techniques} will cover recent techniques used for generative learning. Finally, section \ref{conclusion} will provide some remarks to conclude the paper. 
 
 \section{Generative Learning}
 \label{lr}
@@ -171,9 +171,6 @@ In the above figure \ref{fig4}, an autencoder is shown. It has 2 main components
 
 \subsubsection{Variational Autoencoders (VAEs)}
 Variational Autoencoders (VAEs) are generative models. It is based on vanilla autencoders but with a distinct property of picking up input from a latent space which is continous in nature. It basically avoids overfitting by regularizing its training. Unlike GAN, where a discriminator is used to classify the data which in turn helps the generator to tune itself to fool the discriminator, VAEs learn how to generate the data. The model first encodes the input over the latent space as distribution, then it picks up a point from the resultant latent space and then decoded. The error in decoding is calculated and backpropagated in the network. It uses Stochastic Gradient descent to train itself. This enables the model to generate distinct samples with similar characteristics to the input. VAEs can work with an surprisingly diverse data forms, continous or discrete, labelled or unlabelled, sequential or non-sequential, making it an extremely efficient generative learning technique. VAEs has proven to produce images out of latent space but it often performs poorly. This is the reason why VAEs are not used anymore for generative learning in computer vision.
-
-\section{Comparison}
-\label{comparison}
 
 \section{Conclusion}
 \label{conclusion}
